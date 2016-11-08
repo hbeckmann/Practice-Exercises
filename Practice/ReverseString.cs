@@ -12,8 +12,8 @@ namespace ReverseString
 
         static void Main(string[] args)
         {
-
-            string example = "Hello";
+            Console.WriteLine("Please enter a string to reverse:");
+            string example = Console.ReadLine() ;
             char[] exampleArr = example.ToCharArray();
             string reverse = "";
 
