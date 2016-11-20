@@ -11,15 +11,14 @@ namespace ColorBall
 
         private int size;
         private float radius;
-        private Color color;
-        private int timesThrown;
+        public Color color;
 
         public Ball(int size, float radius, Color color, int timesThrown)
         {
             this.size = size;
             this.radius = radius;
             this.color = color;
-            this.timesThrown = timesThrown;
+            this.TimesThrown = timesThrown;
         }
 
         public void Pop()
@@ -31,14 +30,15 @@ namespace ColorBall
         {
             if(this.size != 0)
             {
-                this.timesThrown++;
+                this.TimesThrown++;
             }
 
         }
 
-        public int GetTimesThrown()
+        public int TimesThrown
         {
-            return timesThrown;
+            get;
+            set;
         }
 
     }

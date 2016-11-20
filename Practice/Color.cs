@@ -23,10 +23,10 @@ namespace ColorBall
 
         public Color(int red, int green, int blue)
         {
-            this.red = red;
-            this.blue = blue;
-            this.green = green;
-            this.alpha = 250;
+            this.Red = red;
+            this.Blue = blue;
+            this.Green = green;
+            this.Alpha = 250;
         }
 
         public void GetColors()
@@ -36,45 +36,31 @@ namespace ColorBall
             Console.WriteLine($"Blue: {this.blue}");
         }
 
-        public int GetRed()
+        public int Red
         {
-            return red;
+            get; set;
         }
 
-        public void SetRed(int red)
+
+        public int Blue
         {
-            this.red = red;
+            get; set;
         }
 
-        public int GetBlue()
+
+        public int Green
         {
-            return blue;
+            get;
+            set;
         }
 
-        public void SetBlue(int blue)
+
+        public int Alpha
         {
-            this.blue = blue;
+            get;
+            set;
         }
 
-        public int GetGreen()
-        {
-            return green;
-        }
-
-        public void SetGreen(int green)
-        {
-            this.green = green;
-        }
-
-        public int GetAlpha()
-        {
-            return alpha;
-        }
-
-        public void SetAlpha(int alpha)
-        {
-            this.alpha = alpha;
-        }
 
         public int GetGrayscale()
         {
